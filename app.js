@@ -19,9 +19,9 @@ app.get('/', (req, res) => {
         if (ip) break;
     }
 
-    res.send(Hola Mundo desde el servidor con IP: ${ip});
+    res.send( `Hola Mundo desde el servidor con IP: ${ip}`);
 });
 
-app.listen(port, () => {
-    console.log(Server running on http://localhost:${port});
+app.listen( port, () => {
+    //console.log(Server running on http://localhost:${port});
 });
